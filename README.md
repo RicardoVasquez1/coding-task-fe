@@ -2,7 +2,7 @@
 
 To get started, you'll need to fork this repository. The design file is available at **[this link](https://www.dropbox.com/sh/wx50uab27dlio04/AAD60-fMZEX8wuB5VRqx1Qc3a?dl=0)**.
 
-Your task is to create the landing page using the provided design, images, fonts, and style guides. This coding task replicates a typical landing page that you might encounter in your day-to-day work for this position.
+Your task is to create a landing page using the provided design, images, fonts, and style guides. This coding task replicates a typical landing page that you might encounter in your day-to-day work for this position.
 
 **Important**:
 
