@@ -1,9 +1,7 @@
 To get started, you'll need to fork [this repository](https://github.com/eclaudino/coding-task-fe). Inside it, you will find the necessary resources for this assignment. 
 
-<aside>
 💡 Note: If you don’t have access to an Adobe XD license, you can open the .xd file with [Photopea](https://www.photopea.com/) or [Figpea](https://figpea.com/).
 A quick guide on how to use Adobe XD or similar programs can be found [**here**](https://www.youtube.com/watch?v=A-RcxjcmbB8).
-</aside>
 
 Your task is to create the landing page using the provided design, images and fonts. This assignment replicates a typical landing page that you might encounter in your day-to-day work for this position.
 
