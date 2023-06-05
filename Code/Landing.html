@@ -36,14 +36,14 @@
       margin-bottom: 0;
       font-weight: bold;
       /* New - remove the bottom margin */
-      font-family: Arial, sans-serif; 
+      font-family: Arial, sans-serif;
     }
 
     .highlighted-text {
       font-size: 40px;
       font-weight: bold;
       margin-top: 0;
-      font-family: Arial, sans-serif; 
+      font-family: Arial, sans-serif;
       /* New - remove the top margin */
     }
 
@@ -78,33 +78,36 @@
     }
 
     .box-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 850px; /* Ajusta el ancho máximo del contenedor */
-  margin-top: 10px;
-}
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 850px;
+      /* Ajusta el ancho máximo del contenedor */
+      margin-top: 10px;
+    }
 
-.box {
-  flex: 1;
-  padding: 0px;
-  color: white;
-  font-weight: bold;
-  width: 100%; /* Cambia a 100% para que coincida con el ancho de la línea */
-  height: 100px;
-  /* Mantener la misma altura */
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* Centrar los elementos */
-  overflow: hidden;
-  font-family: Arial, sans-serif;  /* Agrega la fuente deseada */
+    .box {
+      flex: 1;
+      padding: 0px;
+      color: white;
+      font-weight: bold;
+      width: 100%;
+      /* Cambia a 100% para que coincida con el ancho de la línea */
+      height: 100px;
+      /* Mantener la misma altura */
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* Centrar los elementos */
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+      /* Agrega la fuente deseada */
 
-  /* Prevenir desbordamiento de texto */
-}
+      /* Prevenir desbordamiento de texto */
+    }
 
 
 
@@ -117,17 +120,17 @@
     }
 
     .box h2 {
-  font-size: 40px;
-  /* Increased font-size */
-  margin-bottom: -3px;
-  /* Negative bottom margin to remove extra space */
-}
+      font-size: 40px;
+      /* Increased font-size */
+      margin-bottom: -3px;
+      /* Negative bottom margin to remove extra space */
+    }
 
-.box p {
-  font-size: 20px;
-  margin-top: -3px;
-  /* Negative top margin to remove extra space */
-}
+    .box p {
+      font-size: 20px;
+      margin-top: -3px;
+      /* Negative top margin to remove extra space */
+    }
 
 
     .circle {
@@ -144,7 +147,68 @@
       margin: 0 20px;
     }
 
-    
+    .bold-text-container {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .bold-text-container div {
+  flex: 1;
+  padding: 0 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bold-text-container .title {
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0; /* Agregado para eliminar el margen inferior */
+}
+
+.bold-text-container .subtitle {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 0; /* Agregado para eliminar el margen superior */
+  margin-bottom: 0; /* Agregado para eliminar el margen inferior */
+}
+
+.bold-text-container .content {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0; /* Agregado para eliminar el margen superior */
+}
+
+.bold-text-container .divider {
+  flex: none;
+  width: 1px;
+  background-color: #999;
+  margin: 0 5px;
+  align-self: center;
+  height: 50px;
+}
+.book-now-btn {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px 90px;
+  text-decoration: none;
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+ 
+
+}
+
+.book-now-btn:hover {
+  background-color: #333;
+}
+
   </style>
 </head>
 
@@ -164,7 +228,7 @@
         <h2>$150</h2>
         <p>RED LANE&reg; SAP CREDIT</p>
       </div>
-      
+
       <div class="circle">And</div>
       <div class="box box-2">
         <h2>$100</h2>
@@ -174,6 +238,23 @@
     <div class="text-container">
       <p class="promotion-text">Also, Combine With Our Current Promotions in Curaçao:</p>
     </div>
+    <div class="bold-text-container">
+      <div>
+        <p class="title">RECEIVE A</p>
+        <p class="content">$250 DINE OUT CREDIT</p>
+      </div>
+      <div class="divider"></div>
+      <div>
+        <p class="title">GET UP TO $1,000 INSTANT    BOOKING CREDIT</p>
+       
+      </div>
+      <div class="divider"></div>
+      <div>
+        <p class="title">GET UP TO 55% OFF </p>
+        <p class="content">RACK RATES</p>
+      </div>
+    </div>
+    <a href="#" class="book-now-btn">BOOK NOW</a>
   </div>
 </body>
 
