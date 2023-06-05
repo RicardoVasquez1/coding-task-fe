@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Landing Page</title>
   <style>
@@ -15,7 +16,8 @@
       align-items: center;
       justify-content: flex-start;
       width: 100vw;
-      min-height: 100vh; /* Ajustar la altura mínima para permitir desplazamiento */
+      min-height: 200vh;
+      /* Aumentar el tamaño mínimo para permitir más desplazamiento */
     }
 
     .top-image {
@@ -31,26 +33,36 @@
     }
 
     .main-text {
-      margin-bottom: 0; /* New - remove the bottom margin */
+      margin-bottom: 0;
+      font-weight: bold;
+      /* New - remove the bottom margin */
+      font-family: Arial, sans-serif; 
     }
 
     .highlighted-text {
-      font-size: 24px;
+      font-size: 40px;
       font-weight: bold;
-      margin-top: 0; /* New - remove the top margin */
+      margin-top: 0;
+      font-family: Arial, sans-serif; 
+      /* New - remove the top margin */
     }
 
     .line-container {
       display: flex;
       justify-content: center;
-      width: 100%;
-      max-width: 600px;
+      width: calc(100% + 400px);
+      /* Increase the width to extend even further */
+      margin-left: -200px;
+      /* Adjust negative margins to match */
+      margin-right: -200px;
     }
+
+
 
     .line {
       width: 100%;
       text-align: center;
-      line-height: 0.1em;
+      line-height: 0.0em;
       margin: 20px 0;
       border: none;
       color: black;
@@ -59,32 +71,42 @@
 
     .line span {
       background-color: #f4f4f4;
-      padding: 0 10px;
+      padding: 0 1px;
+      font-weight: bold;
+      font-size: 20px;
+      /* Agregar estilo negrita */
     }
 
     .box-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      max-width: 600px;
-      margin-top: 10px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 850px; /* Ajusta el ancho máximo del contenedor */
+  margin-top: 10px;
+}
 
-    .box {
-      flex: 1;
-      padding: 10px;
-      color: white;
-      font-weight: bold;
-      max-width: calc(40% - 20px); /* Ajustar el ancho máximo */
-      height: 60px; /* Define a specific height */
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; /* New - align items in the center */
-      overflow: hidden; /* Prevent text from overflowing */
-    }
+.box {
+  flex: 1;
+  padding: 0px;
+  color: white;
+  font-weight: bold;
+  width: 100%; /* Cambia a 100% para que coincida con el ancho de la línea */
+  height: 100px;
+  /* Mantener la misma altura */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Centrar los elementos */
+  overflow: hidden;
+  font-family: Arial, sans-serif;  /* Agrega la fuente deseada */
+
+  /* Prevenir desbordamiento de texto */
+}
+
+
 
     .box-1 {
       background-color: #3fc1d9;
@@ -95,21 +117,24 @@
     }
 
     .box h2 {
-      font-size: 24px; /* Increased font-size */
-      line-height: 0.8; /* Adjusted line height */
-      margin-bottom: 0; /* No bottom margin */
-    }
+  font-size: 40px;
+  /* Increased font-size */
+  margin-bottom: -3px;
+  /* Negative bottom margin to remove extra space */
+}
 
-    .box p {
-      font-size: 14px;
-      line-height: 0.8; /* Adjusted line height */
-    }
+.box p {
+  font-size: 20px;
+  margin-top: -3px;
+  /* Negative top margin to remove extra space */
+}
+
 
     .circle {
       background-color: black;
       color: white;
-      width: 30px;
-      height: 30px;
+      width: 40px;
+      height: 40px;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -118,31 +143,38 @@
       font-size: 14px;
       margin: 0 20px;
     }
+
+    
   </style>
 </head>
+
 <body>
   <div class="container">
     <img src="images/hero-desktop.jpg" alt="Imagen superior" class="top-image">
     <div class="text-container">
       <p class="main-text">Book 7 Nights or Longer at Sandals Royal Curacao and Receive Your</p>
-      <p class="highlighted-text">7th NIGHT FREE!</p>
+      <p class="highlighted-text">7ᴛʜ ɴIGHT FREE!</p>
       <div class="line-container">
         <div class="line"><span>PLUS</span></div>
       </div>
     </div>
-    
+
     <div class="box-container">
       <div class="box box-1">
         <h2>$150</h2>
-        <p>RED LANE® SAP CREDIT</p>
+        <p>RED LANE&reg; SAP CREDIT</p>
       </div>
+      
       <div class="circle">And</div>
       <div class="box box-2">
         <h2>$100</h2>
         <p>EPIX PHOTOSHOP CREDIT</p>
       </div>
     </div>
+    <div class="text-container">
+      <p class="promotion-text">Also, Combine With Our Current Promotions in Curaçao:</p>
+    </div>
   </div>
 </body>
-</html>
 
+</html>
