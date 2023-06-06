@@ -183,9 +183,9 @@
     .rectangle {
   position: relative;
   width: 80%;
-  max-width: 800px;
-  height: 300px;
-  margin-top: 70px;
+  max-width: 1100px;
+  height: 400px;
+  margin-top: 90px;
   background-color: #ffffff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -244,7 +244,110 @@
     box-shadow: 140px -140px 0 #4a98bf;
 }
 
+.title-line {
+  width: 80%;
+  height: 0.3px;
+  background-color: #999;
+ 
+  margin-top: -29px; 
+}
 
+
+    .resort-title {
+      font-size: 29px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+    }
+
+    .resort-location {
+      font-size: 10px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    .resort-description {
+  width: 80%; /* Ensure it has the same width as the line */
+  font-size: 12px;
+  text-align: justify; 
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+    .resort-link {
+      margin-top: -20px; 
+      font-size: 14px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      margin-bottom: 10px;
+    }
+
+    
+    .booking-info-container {
+  display: flex;
+  
+  font-weight: bold;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+
+    .booking-info-container .title {
+      font-size: 14px;
+      width: 100%;
+     
+      margin-bottom: 0;
+    }
+
+    .booking-info-container .content {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .booking-info-container .divider {
+      flex: none;
+      width: 1px;
+      background-color: #999;
+      margin: 0 5px;
+      align-self: center;
+      height: 50px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 10px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    .button.grey {
+      background-color: grey;
+    }
+
+    .button.black {
+      background-color: black;
+    }
+
+    .credit-info {
+      font-size: 14px;
+      text-align: center;
+      font-weight: normal;
+    }
+
+    .credit-info span {
+      font-weight: bold;
+    }
 
   </style>
 </head>
@@ -294,8 +397,30 @@
     <div class="rectangle">
       <img src="images/resort-image.jpg" alt="Ticket" class="ticket-image">
       <div class="on-sale-label"></div>
+      <div style="margin-left: 40%;">
+        <p class="resort-title">Sandals Royal Curaçao</p>
+        <div class="title-line"></div>
+        <p class="resort-location">SANTA BARBARA - CURACAO</p>
+        <p class="resort-description">Sandals Royal Curaçao is where amazing comes together - with the first-ever Awa Seaside Bungalows, first Kurason Island Suites, Dos Awa 2-Level Infinity Pool, 11 restaurants, and MINI Coopers for complimentary use for select rooms categories.</p>
+        <p class="resort-link">VIEW RESORT</p>
+        <div class="booking-info-container">
+          <div>
+            <p class="title">Book a Stay Between:</p>
+            <p class="content">MAR 22 - MAY 11, 2023</p>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <p class="title">For Travel:</p>
+            <p class="content">MAR 22 - DEC 31, 2023</p>
+          </div>
+        </div>
+        <div class="button-container">
+          <a href="#" class="button grey">VIEW OFFER DETAILS ➔</a>
+          <a href="#" class="button black">VIEW ROOMS</a>
+        </div>
+        <p class="credit-info">BOOK ONLINE & GET <span>$25 CREDIT</span></p>
+      </div>
     </div>
-  </div>
-</body>
-
-</html>
+  </body>
+  
+  </html>
