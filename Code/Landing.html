@@ -17,7 +17,6 @@
       justify-content: flex-start;
       width: 100vw;
       min-height: 200vh;
-      /* Aumentar el tamaño mínimo para permitir más desplazamiento */
     }
 
     .top-image {
@@ -35,7 +34,6 @@
     .main-text {
       margin-bottom: 0;
       font-weight: bold;
-      /* New - remove the bottom margin */
       font-family: Arial, sans-serif;
     }
 
@@ -44,20 +42,15 @@
       font-weight: bold;
       margin-top: 0;
       font-family: Arial, sans-serif;
-      /* New - remove the top margin */
     }
 
     .line-container {
       display: flex;
       justify-content: center;
       width: calc(100% + 400px);
-      /* Increase the width to extend even further */
       margin-left: -200px;
-      /* Adjust negative margins to match */
       margin-right: -200px;
     }
-
-
 
     .line {
       width: 100%;
@@ -74,7 +67,6 @@
       padding: 0 1px;
       font-weight: bold;
       font-size: 20px;
-      /* Agregar estilo negrita */
     }
 
     .box-container {
@@ -82,8 +74,7 @@
       align-items: center;
       justify-content: center;
       width: 100%;
-      max-width: 850px;
-      /* Ajusta el ancho máximo del contenedor */
+      max-width: 900px;
       margin-top: 10px;
     }
 
@@ -93,23 +84,15 @@
       color: white;
       font-weight: bold;
       width: 100%;
-      /* Cambia a 100% para que coincida con el ancho de la línea */
-      height: 100px;
-      /* Mantener la misma altura */
+      height: 115px;
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      /* Centrar los elementos */
       overflow: hidden;
       font-family: Arial, sans-serif;
-      /* Agrega la fuente deseada */
-
-      /* Prevenir desbordamiento de texto */
     }
-
-
 
     .box-1 {
       background-color: #3fc1d9;
@@ -121,17 +104,13 @@
 
     .box h2 {
       font-size: 40px;
-      /* Increased font-size */
       margin-bottom: -3px;
-      /* Negative bottom margin to remove extra space */
     }
 
     .box p {
       font-size: 20px;
       margin-top: -3px;
-      /* Negative top margin to remove extra space */
     }
-
 
     .circle {
       background-color: black;
@@ -157,57 +136,115 @@
     }
 
     .bold-text-container div {
-  flex: 1;
-  padding: 0 1px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+      flex: 1;
+      padding: 0 1px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .bold-text-container .title {
+      font-size: 14px;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    .bold-text-container .content {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .bold-text-container .divider {
+      flex: none;
+      width: 1px;
+      background-color: #999;
+      margin: 0 5px;
+      align-self: center;
+      height: 50px;
+    }
+
+    .book-now-btn {
+      display: inline-block;
+      background-color: black;
+      color: white;
+      padding: 10px 90px;
+      text-decoration: none;
+      margin-top: 50px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .book-now-btn:hover {
+      background-color: #333;
+    }
+
+    .rectangle {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  height: 300px;
+  margin-top: 70px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 
-.bold-text-container .title {
-  font-size: 14px;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 0; /* Agregado para eliminar el margen inferior */
+
+.ticket-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+    .on-sale-label {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: rotate(90deg);
 }
 
-.bold-text-container .subtitle {
-  font-size: 14px;
-  text-align: left;
-  margin-top: 0; /* Agregado para eliminar el margen superior */
-  margin-bottom: 0; /* Agregado para eliminar el margen inferior */
+.on-sale-label:before {
+    content: 'ON SALE';
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background: #62baea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.1em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    transform: rotate(-45deg) translateY(-20px);
 }
 
-.bold-text-container .content {
-  font-size: 14px;
-  text-align: center;
-  margin-top: 0; /* Agregado para eliminar el margen superior */
+.on-sale-label::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: #4a98bf;
+    z-index: -1;
+    box-shadow: 140px -140px 0 #4a98bf;
 }
 
-.bold-text-container .divider {
-  flex: none;
-  width: 1px;
-  background-color: #999;
-  margin: 0 5px;
-  align-self: center;
-  height: 50px;
-}
-.book-now-btn {
-  display: inline-block;
-  background-color: black;
-  color: white;
-  padding: 10px 90px;
-  text-decoration: none;
-  margin-top: 50px;
-  text-align: center;
-  font-weight: bold;
- 
 
-}
-
-.book-now-btn:hover {
-  background-color: #333;
-}
 
   </style>
 </head>
@@ -245,8 +282,7 @@
       </div>
       <div class="divider"></div>
       <div>
-        <p class="title">GET UP TO $1,000 INSTANT    BOOKING CREDIT</p>
-       
+        <p class="title">GET UP TO $1,000 INSTANT BOOKING CREDIT</p>
       </div>
       <div class="divider"></div>
       <div>
@@ -255,6 +291,10 @@
       </div>
     </div>
     <a href="#" class="book-now-btn">BOOK NOW</a>
+    <div class="rectangle">
+      <img src="images/resort-image.jpg" alt="Ticket" class="ticket-image">
+      <div class="on-sale-label"></div>
+    </div>
   </div>
 </body>
 
