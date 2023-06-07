@@ -180,77 +180,80 @@
       background-color: #333;
     }
 
+    /*AQUI EMPIEZA LO DEL PASAJE O BOLETO*/
+
     .rectangle {
-  position: relative;
-  width: 80%;
-  max-width: 1100px;
-  height: 400px;
-  margin-top: 90px;
-  background-color: #ffffff;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-}
+      position: relative;
+      width: 80%;
+      max-width: 1000px;
+      height: 350px;
+      margin-top: 90px;
+      background-color: #ffffff;
+      box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
 
 
-.ticket-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 35%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
+    .ticket-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 35%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
     .on-sale-label {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 150px;
-    height: 150px;
+      position: absolute;
+      top: -10px;
+      right: -10px;
+      width: 150px;
+      height: 150px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    transform: rotate(90deg);
-}
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      transform: rotate(90deg);
+    }
 
-.on-sale-label:before {
-    content: 'ON SALE';
-    position: absolute;
-    width: 150%;
-    height: 40px;
-    background: #62baea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #fff;
-    letter-spacing: 0.1em;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-    transform: rotate(-45deg) translateY(-20px);
-}
+    .on-sale-label:before {
+      content: 'ON SALE';
+      position: absolute;
+      width: 150%;
+      height: 40px;
+      background: #62baea;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.1em;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transform: rotate(-45deg) translateY(-20px);
+    }
 
-.on-sale-label::after {
-    content: ' ';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 10px;
-    height: 10px;
-    background: #4a98bf;
-    z-index: -1;
-    box-shadow: 140px -140px 0 #4a98bf;
-}
+    .on-sale-label::after {
+      content: ' ';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      background: #4a98bf;
+      z-index: -1;
+      box-shadow: 140px -140px 0 #4a98bf;
+    }
 
-.title-line {
-  width: 80%;
-  height: 0.3px;
-  background-color: #999;
- 
-  margin-top: -29px; 
-}
+    .title-line {
+      width: 80%;
+      height: 0.3px;
+      background-color: #999;
+
+      margin-top: -29px;
+    }
 
 
     .resort-title {
@@ -267,16 +270,17 @@
     }
 
     .resort-description {
-  width: 80%; /* Ensure it has the same width as the line */
-  font-size: 12px;
-  text-align: justify; 
-  margin-bottom: 20px;
-  font-family: Arial, sans-serif;
-}
+      width: 80%;
+      /* Ensure it has the same width as the line */
+      font-size: 12px;
+      text-align: justify;
+      margin-bottom: 20px;
+      font-family: Arial, sans-serif;
+    }
 
 
     .resort-link {
-      margin-top: -20px; 
+      margin-top: -20px;
       font-size: 14px;
       font-weight: bold;
       font-family: Arial, sans-serif;
@@ -284,18 +288,19 @@
     }
 
     .booking-info-container {
-  display: flex;
-   /* This line will create equal space around the items */
-  font-weight: bold;
-  margin-top: 20px;
-  font-family: Arial, sans-serif;
- 
-}
+      display: flex;
+      /* This line will create equal space around the items */
+      font-weight: bold;
+      margin-top: 20px;
+      font-family: Arial, sans-serif;
+
+    }
 
     .booking-info-container .title {
       font-size: 14px;
       width: 100%;
       margin-bottom: 0;
+      color: rgb(51, 116, 177);
     }
 
     .booking-info-container .content {
@@ -307,44 +312,71 @@
       flex: none;
       width: 1px;
       background-color: #999;
-      margin: 0 5px;
+      margin: 0 19px;
       align-self: center;
       height: 50px;
     }
 
     .button-container {
       display: flex;
-      justify-content: space-around;
-      margin-top: 20px;
+      margin-top: 10px;
+      gap: 10px;
     }
 
     .button {
       padding: 10px 20px;
-      font-size: 14px;
+      font-size: 12px;
       font-weight: bold;
       color: white;
       text-decoration: none;
       text-align: center;
       border-radius: 5px;
+      width: 160px;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
     }
 
     .button.grey {
-      background-color: grey;
+      background-color: #c5c5c5;
+    }
+
+
+    .button.grey .text {
+      color: black;
+    }
+
+    .button.grey .arrow {
+      color: rgb(51, 116, 177);
     }
 
     .button.black {
       background-color: black;
     }
 
+    .button.black .text,
+    .button.black .arrow {
+      color: white;
+    }
+
+    .button .arrow {
+      margin-left: 10px;
+    }
+
     .credit-info {
-      font-size: 14px;
-      text-align: center;
+
+      margin-top: 10px;
+
+      margin-left: 223px;
+      font-size: 11px;
       font-weight: normal;
+      font-family: Arial, sans-serif;
     }
 
     .credit-info span {
       font-weight: bold;
     }
+  /*AQUI TERMINA*/
 
   </style>
 </head>
@@ -398,7 +430,9 @@
         <p class="resort-title">Sandals Royal Curaçao</p>
         <div class="title-line"></div>
         <p class="resort-location">SANTA BARBARA - CURACAO</p>
-        <p class="resort-description">Sandals Royal Curaçao is where amazing comes together - with the first-ever Awa Seaside Bungalows, first Kurason Island Suites, Dos Awa 2-Level Infinity Pool, 11 restaurants, and MINI Coopers for complimentary use for select rooms categories.</p>
+        <p class="resort-description">Sandals Royal Curaçao is where amazing comes together - with the first-ever Awa
+          Seaside Bungalows, first Kurason Island Suites, Dos Awa 2-Level Infinity Pool, 11 restaurants, and MINI
+          Coopers for complimentary use for select rooms categories.</p>
         <p class="resort-link">VIEW RESORT</p>
         <div class="booking-info-container">
           <div>
@@ -407,17 +441,21 @@
           </div>
           <div class="divider"></div>
           <div>
-            <p class="title">  For Travel:</p>
+            <p class="title"> For Travel:</p>
             <p class="content">MAR 22 - DEC 31, 2023</p>
           </div>
         </div>
         <div class="button-container">
-          <a href="#" class="button grey">VIEW OFFER DETAILS ➔</a>
-          <a href="#" class="button black">VIEW ROOMS</a>
+          <a href="#" class="button grey">
+            <span>VIEW OFFER DETAILS </span>
+            <span class="arrow"> > </span>
+          </a>
+          <a href="#" class="button black">
+            <span>VIEW ROOMS</span>
+          </a>
         </div>
         <p class="credit-info">BOOK ONLINE & GET <span>$25 CREDIT</span></p>
       </div>
-    </div>
-  </body>
-  
-  </html>
+</body>
+
+</html>
