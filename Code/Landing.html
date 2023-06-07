@@ -16,7 +16,7 @@
       align-items: center;
       justify-content: flex-start;
       width: 100vw;
-      min-height: 200vh;
+      min-height: 250vh;
     }
 
     .top-image {
@@ -336,6 +336,9 @@
       display: flex;
       justify-content: center;
     }
+    .button.grey span {
+  color: black;
+}
 
     .button.grey {
       background-color: #c5c5c5;
@@ -356,7 +359,7 @@
 
     .button.black .text,
     .button.black .arrow {
-      color: white;
+      color: rgb(240, 0, 0);
     }
 
     .button .arrow {
@@ -377,6 +380,58 @@
       font-weight: bold;
     }
   /*AQUI TERMINA*/
+  .important-note {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 130px;
+  text-align: center;
+  color: rgb(51, 116, 177); /* Este es un color azul, puedes reemplazarlo con el color exacto que desees */
+  font-family: Arial, sans-serif;
+}
+
+.register-prompt {
+  font-size: 15px;
+  margin-top: -15px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.register-instruction {
+  
+  margin-top: -5px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.register-instruction .highlight {
+  text-decoration: underline;
+}
+
+.already-booked {
+  margin-top: -6px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+.already-booked .register-now {
+  color: black;
+}
+
+.already-booked .more-info {
+  color: #007bff; /* Este es un color azul, puedes reemplazarlo con el color exacto que desees */
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container img {
+  max-width: 500%;  /* Asegura que la imagen no sea más ancha que su contenedor */
+  height: auto;  /* Mantiene la proporción de la imagen */
+}
+
 
   </style>
 </head>
@@ -456,6 +511,15 @@
         </div>
         <p class="credit-info">BOOK ONLINE & GET <span>$25 CREDIT</span></p>
       </div>
+      <p class="important-note">IMPORTANT</p>
+      <p class="register-prompt">YOU MUST REGISTER YOUR BOOKING</p>
+      <p class="register-instruction">In order to receive your offer, a registration form must be submitted within <span class="highlight">72 hours of booking</span></p>
+      <p class="already-booked"><span class="register-now">ALREADY BOOKED? REGISTER NOW</span> <span class="more-info">></span></p>
+      <div class="image-container">
+        <img class="bottom-image" src="images/footer-image.jpg" alt="Descripción de la imagen inferior" />
+      </div>
+     
+    </div>
 </body>
 
 </html>
